@@ -16,6 +16,7 @@ app.use(cors());
 
 // Routes
 app.use("/api/auth", require("./routes/auth"));
+app.use("/api/listings", require("./routes/listings"));
 
 const PORT = process.env.PORT || 5000;
 const httpServer = createServer(app);
